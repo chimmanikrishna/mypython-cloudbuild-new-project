@@ -43,7 +43,7 @@ steps:
   # [START cloudbuild_python_deploy_yaml]
   # Deploy to Cloud Run
   - name: google/cloud-sdk
-    args: ['gcloud', 'run', 'deploy', 'helloworld-dev', 
+    args: ['gcloud', 'run', 'deploy', 'balu-dev', 
            '--image=us-central1-docker.pkg.dev/mypoc-412506/balu-dev/myimage:dev', 
            '--region', 'us-central1', '--platform', 'managed', 
            '--allow-unauthenticated']
