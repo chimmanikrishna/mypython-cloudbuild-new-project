@@ -51,13 +51,13 @@ steps:
   
 # [START cloudbuild_python_logs_yaml]
 # Save test logs to Google Cloud Storage
-artifacts:
-  objects:
-    location: gs://balu-2511/
-    paths:
-      - dev_test_log.xml
+# artifacts:
+#   objects:
+#     location: gs://balu-2511/
+#     paths:
+#       - dev_test_log.xml
 # [END cloudbuild_python_logs_yaml]
 # Store images in Google Artifact Registry 
 images:
   - us-central1-docker.pkg.dev/mypoc-412506/balu-dev/myimage:dev
-# [END cloudbuild_python_yaml]
+# [END cloudbuild_python_yaml]:
